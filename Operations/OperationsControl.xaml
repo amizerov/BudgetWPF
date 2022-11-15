@@ -1,0 +1,57 @@
+﻿<UserControl x:Class="Budget.Operations.OperationsControl"
+             xmlns:local="clr-namespace:Budget.Operations"
+             xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+             xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid"
+             xmlns:dxgt="http://schemas.devexpress.com/winfx/2008/xaml/grid/themekeys"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors" mc:Ignorable="d" 
+             d:DesignHeight="427" d:DesignWidth="677">
+    <Grid>
+        <Label Content="Период:" Height="28" HorizontalAlignment="Left" Margin="7,7,0,0" Name="lblPeriod" VerticalAlignment="Top" Width="65" />
+        <dxe:DateEdit Height="25" HorizontalAlignment="Left" Margin="61,7,0,0" Name="OperationsDownDatePicker" VerticalAlignment="Top" Width="115" />
+        <dxe:DateEdit Height="25" HorizontalAlignment="Left" Margin="178,7,0,0" Name="OperationsUpDatePicker" VerticalAlignment="Top" Width="115" />
+        <Button Height="23" HorizontalAlignment="Left" Margin="301,8,0,0" Name="btnOperationsRefresh" VerticalAlignment="Top" Width="111" Click="btnOperationsRefresh_Click">
+            <Button.Content>
+                <StackPanel Orientation="Horizontal" Margin="-8,0,0,0">
+                    <Image Source="/Budget;component/images/refresh.png" Width="16" Height="16" Stretch="Fill" />
+                    <TextBlock Margin="2,0,0,0">Обновить (F5)</TextBlock>
+                </StackPanel>
+            </Button.Content>
+        </Button>
+
+        <dxg:GridControl Grid.Row="1" HorizontalAlignment="Stretch" Margin="0,40,0,0" Name="OperationsGridControl" VerticalAlignment="Stretch" Width="Auto" AutoPopulateColumns="True" Grid.ColumnSpan="2" dx:ThemeManager.ThemeName="Office2007Silver">
+            <dxg:GridControl.Resources>
+                <DataTemplate x:Key="debetCellTemplate">
+                    <dx:DXDockPanel>
+                        <TextBlock VerticalAlignment="Center" Foreground="Red" IsHitTestVisible="True" HorizontalAlignment="Right">
+                                        <TextBlock.Text>
+                                            <Binding Path="Value" StringFormat="0.00" />
+                                        </TextBlock.Text>
+                        </TextBlock>
+                    </dx:DXDockPanel>
+                </DataTemplate>
+
+                <DataTemplate x:Key="creditCellTemplate">
+                    <dx:DXDockPanel>
+                        <TextBlock VerticalAlignment="Center" Foreground="Blue" IsHitTestVisible="True" HorizontalAlignment="Right">
+                                        <TextBlock.Text>
+                                            <Binding Path="Value" StringFormat="0.00" />
+                                        </TextBlock.Text>
+                        </TextBlock>
+                    </dx:DXDockPanel>
+                </DataTemplate>
+
+                <Style x:Key="statusCellStyle" BasedOn="{StaticResource {dxgt:GridRowThemeKey ResourceKey = CellStyle}}" TargetType="dxg:CellContentPresenter">
+                    <Setter Property="Background" Value="{Binding Path=RowData.Row.Status, Converter={local:StateConverter}}"/>
+                </Style>
+
+            </dxg:GridControl.Resources>
+            <dxg:GridControl.View>
+                <dxg:TableView Name="OperationsGridControlView" ShowIndicator="False" ShowGroupPanel="False" AutoWidth="True" />
+            </dxg:GridControl.View>
+        </dxg:GridControl>
+    </Grid>
+</UserControl>

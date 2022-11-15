@@ -1,0 +1,31 @@
+﻿<dx:DXWindow x:Class="Budget.AddComment"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+        xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
+        Title="Оставить комментарий" Height="353" Width="309" Icon="/Budget;component/images/budget.png" WindowStartupLocation="CenterOwner" ResizeMode="NoResize">
+    <Grid>
+        <Label Content="Тип:" Height="28" HorizontalAlignment="Left" Margin="12,12,0,0" Name="lblCommentType" VerticalAlignment="Top" />
+        <dxe:ComboBoxEdit Height="23" HorizontalAlignment="Left" Margin="53,14,0,0" Name="commentTypesComboBox" VerticalAlignment="Top" Width="169" SelectedIndexChanged="commentTypesComboBox_SelectedIndexChanged" />
+        <Image Height="32" HorizontalAlignment="Left" Margin="234,8,0,0" Name="imgComment" Stretch="Fill" VerticalAlignment="Top" Width="32" />
+
+        <dxe:TextEdit Height="218" HorizontalAlignment="Stretch" Margin="8,51,8,0" Name="txtComment" VerticalAlignment="Top" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" AcceptsReturn="True" VerticalContentAlignment="Top" />
+
+        <Button Height="23" HorizontalAlignment="Left" Margin="39,282,0,0" Name="btnSend" VerticalAlignment="Top" Width="95" Click="btnSend_Click" >
+            <Button.Content>
+                <StackPanel Orientation="Horizontal" Margin="-10,0,0,0">
+                    <Image Source="/Budget;component/images/send.png" Width="16" Height="16" Stretch="Fill"/>
+                    <TextBlock Margin="2,0,0,0">Отправить</TextBlock>
+                </StackPanel>
+            </Button.Content>
+        </Button>
+        <Button Height="23" HorizontalAlignment="Left" Margin="157,282,0,0" Name="btnCancel" VerticalAlignment="Top" Width="77" Click="btnCancel_Click" >
+            <Button.Content>
+                <StackPanel Orientation="Horizontal" Margin="-9,0,0,0">
+                    <Image Source="/Budget;component/images/cancel.png" Width="16" Height="16" Stretch="Fill"/>
+                    <TextBlock Margin="2,0,0,0">Отмена</TextBlock>
+                </StackPanel>
+            </Button.Content>
+        </Button>
+    </Grid>
+</dx:DXWindow>

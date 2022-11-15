@@ -1,0 +1,72 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Budget.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="LayoutAccounts" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ConnectionString" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">julgB6OXN3jmJU8gKLqjnaQ/wWfTSRZGYWN2lQv7tNwpTiwFY0emDAAC82CobMRX2vXgKxuLltJjj/AMimGCV3uDgNnRd0hwma4tAqo38lJlTyfNz8LiHipnY/riHCIqK91moWGle2vm7NViEBNlmg==</Value>
+    </Setting>
+    <Setting Name="FacebookAppID" Type="System.String" Scope="User">
+      <Value Profile="(Default)">461996830499573</Value>
+    </Setting>
+    <Setting Name="FacebookCode" Type="System.String" Scope="User">
+      <Value Profile="(Default)">afb676089720a7a0fbb0c503204dbf24</Value>
+    </Setting>
+    <Setting Name="Dates" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ShowHints" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="VKAppID" Type="System.String" Scope="User">
+      <Value Profile="(Default)">3113253</Value>
+    </Setting>
+    <Setting Name="ThemeIndex" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">6</Value>
+    </Setting>
+    <Setting Name="FormCoords" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="SplitterDist" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">-1</Value>
+    </Setting>
+    <Setting Name="RecalcDates" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ReportAccountsDates" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ReportCategoriesDates" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="CatFormCoords" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="LastLoadedVersion" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="LastVersionSetupLoaded" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="LayoutOperations" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="RememberMe" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="Login" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Password" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="IdeaTrackerConString" Type="System.String" Scope="User">
+      <Value Profile="(Default)">julgB6OXN3g8ZFBkat9Hg5lpsKgDMxS0EaocchqolALnkvU4LW0MiR+gYKMdn30HU7NBb/9W1rxoBaE2fj0MvNwYF1Ff72HHXzGboFyfmt7XdROBLq1BXgKGrphzVGNiT5xEC7RWTXYZLMDGLbsbsQ==</Value>
+    </Setting>
+    <Setting Name="BudgetServiceFilesUrl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://budget.ultrazoom.ru:96/BudgetReaderFiles.svc</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

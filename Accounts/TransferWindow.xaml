@@ -1,0 +1,34 @@
+﻿<dx:DXWindow x:Class="Budget.TransferWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
+        xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+        Title="Выберите счет для перевода денег" Height="180" Width="350" KeyUp="Window_KeyUp" ResizeMode="NoResize" Icon="/Budget;component/images/budget.png" WindowStartupLocation="CenterScreen" ShowInTaskbar="False">
+    <Grid>
+        <Label Content="Исходный счет:" Height="28" HorizontalAlignment="Left" Name="lblFromAccount" VerticalAlignment="Top" Margin="12,12,0,0" />
+        <Label Content="" Height="28" HorizontalAlignment="Left" Margin="142,12,0,0" Name="lblFromAccountName" VerticalAlignment="Top" Width="172" />
+
+        <Label Content="Счет для перевода:" Height="28" HorizontalAlignment="Left" Margin="12,46,0,0" Name="lblTransfer" VerticalAlignment="Top" />
+        <dxe:ComboBoxEdit Height="23" HorizontalAlignment="Left" Margin="142,46,0,0" Name="accountsComboBox" VerticalAlignment="Top" Width="172" />
+
+        <Label Content="Сумма:" Height="28" HorizontalAlignment="Left" Margin="79,80,0,0" Name="lblSum" VerticalAlignment="Top" />
+        <dxe:TextEdit Height="23" HorizontalAlignment="Left" Margin="142,80,0,0" Name="txtSum" VerticalAlignment="Top" Width="172" Text="0" AcceptsReturn="True" />
+
+        <Button Height="23" HorizontalAlignment="Left" Margin="77,116,0,0" Name="btnCarryOut" VerticalAlignment="Top" Width="92" Click="btnCarryOut_Click" >
+            <Button.Content>
+                <StackPanel Orientation="Horizontal" Margin="-8,0,0,0">
+                    <Image Source="/Budget;component/images/save.png" Width="16" Height="16" Stretch="Fill" />
+                    <TextBlock Name="txtExecute" Margin="2,0,0,0">Сохранить</TextBlock>
+                </StackPanel>
+            </Button.Content>
+        </Button>
+        <Button Height="23" HorizontalAlignment="Left" Margin="183,116,0,0" Name="btnCancel" VerticalAlignment="Top" Width="73" Click="btnCancel_Click" >
+            <Button.Content>
+                <StackPanel Orientation="Horizontal" Margin="-6,0,0,0">
+                    <Image Source="/Budget;component/images/cancel.png" Width="16" Height="16" Stretch="Fill" />
+                    <TextBlock Margin="2,0,0,0">Отмена</TextBlock>
+                </StackPanel>
+            </Button.Content>
+        </Button>
+    </Grid>
+</dx:DXWindow>

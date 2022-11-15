@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<configuration>
+  <configSections>
+    <sectionGroup name="applicationSettings" type="System.Configuration.ApplicationSettingsGroup, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <section name="Budget.Properties.Settings" type="System.Configuration.ClientSettingsSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" requirePermission="false"/>
+    </sectionGroup>
+    <sectionGroup name="userSettings" type="System.Configuration.UserSettingsGroup, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <section name="Budget.Properties.Settings" type="System.Configuration.ClientSettingsSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" allowExeDefinition="MachineToLocalUser" requirePermission="false"/>
+    </sectionGroup>
+  </configSections>
+  <applicationSettings>
+    <Budget.Properties.Settings>
+      <setting name="ConnectionString" serializeAs="String">
+        <value>julgB6OXN3jmJU8gKLqjnaQ/wWfTSRZGYWN2lQv7tNwpTiwFY0emDAAC82CobMRX2vXgKxuLltJjj/AMimGCV3uDgNnRd0hwma4tAqo38lJlTyfNz8LiHipnY/riHCIqK91moWGle2vm7NViEBNlmg==</value>
+      </setting>
+    </Budget.Properties.Settings>
+  </applicationSettings>
+  <userSettings>
+    <Budget.Properties.Settings>
+            <setting name="LayoutAccounts" serializeAs="String">
+                <value/>
+            </setting>
+            <setting name="FacebookAppID" serializeAs="String">
+                <value>461996830499573</value>
+            </setting>
+            <setting name="FacebookCode" serializeAs="String">
+                <value>afb676089720a7a0fbb0c503204dbf24</value>
+            </setting>
+            <setting name="Dates" serializeAs="String">
+                <value/>
+            </setting>
+            <setting name="ShowHints" serializeAs="String">
+                <value>True</value>
+            </setting>
+            <setting name="VKAppID" serializeAs="String">
+                <value>3113253</value>
+            </setting>
+            <setting name="ThemeIndex" serializeAs="String">
+                <value>1</value>
+            </setting>
+            <setting name="FormCoords" serializeAs="String">
+                <value/>
+            </setting>
+            <setting name="SplitterDist" serializeAs="String">
+                <value>-1</value>
+            </setting>
+            <setting name="RecalcDates" serializeAs="String">
+                <value/>
+            </setting>
+            <setting name="ReportAccountsDates" serializeAs="String">
+                <value/>
+            </setting>
+            <setting name="ReportCategoriesDates" serializeAs="String">
+                <value/>
+            </setting>
+            <setting name="CatFormCoords" serializeAs="String">
+                <value/>
+            </setting>
+            <setting name="LastLoadedVersion" serializeAs="String">
+                <value/>
+            </setting>
+            <setting name="LastVersionSetupLoaded" serializeAs="String">
+                <value>False</value>
+            </setting>
+            <setting name="LayoutOperations" serializeAs="String">
+                <value/>
+            </setting>
+            <setting name="RememberMe" serializeAs="String">
+                <value>False</value>
+            </setting>
+            <setting name="Login" serializeAs="String">
+                <value/>
+            </setting>
+            <setting name="Password" serializeAs="String">
+                <value/>
+            </setting>
+            <setting name="IdeaTrackerConString" serializeAs="String">
+                <value>julgB6OXN3g8ZFBkat9Hg5lpsKgDMxS0EaocchqolALnkvU4LW0MiR+gYKMdn30HU7NBb/9W1rxoBaE2fj0MvNwYF1Ff72HHXzGboFyfmt7XdROBLq1BXgKGrphzVGNiT5xEC7RWTXYZLMDGLbsbsQ==</value>
+            </setting>
+            <setting name="BudgetServiceFilesUrl" serializeAs="String">
+                <value>http://budget.ultrazoom.ru:96/BudgetReaderFiles.svc</value>
+            </setting>
+        </Budget.Properties.Settings>
+  </userSettings>
+<startup><supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.6.1"/></startup></configuration>

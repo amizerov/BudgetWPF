@@ -1,0 +1,21 @@
+﻿<dx:DXWindow x:Class="Budget.BudgetPlanning"
+            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+            xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+            Title="Планирование бюджета"
+            Height="366" Width="521"
+            WindowStartupLocation="CenterOwner"
+            Icon="/Budget;component/images/budget.png">
+    <Grid>
+        <TabControl Height="Auto" HorizontalAlignment="Stretch" Name="tabControlPlanning" VerticalAlignment="Stretch" Width="Auto" SelectionChanged="tabControlPlanning_SelectionChanged">
+            <TabItem Header="Счета" Name="tabItemAccounts">
+                <Grid Name="gridAccountsPlanning">
+                </Grid>
+            </TabItem>
+            <TabItem Header="Категории" Name="tabItemCategories">
+                <Grid Name="gridCategoriesPlanning">
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</dx:DXWindow>

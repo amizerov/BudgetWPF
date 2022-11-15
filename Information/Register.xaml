@@ -1,0 +1,20 @@
+﻿<dx:DXWindow x:Class="Budget.Register"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
+        xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+        Title="Зарегистрироваться" Height="116" Width="300" Icon="/Budget;component/images/budget.png" WindowStartupLocation="CenterOwner" ResizeMode="NoResize" Loaded="Window_Loaded">
+    <Grid>
+        <Label Content="Ваш e-mail:" Height="28" HorizontalAlignment="Left" Margin="12,12,0,0" Name="lblEmail" VerticalAlignment="Top" />
+        <dxe:TextEdit Height="23" HorizontalAlignment="Left" Margin="90,14,0,0" Name="txtEmail" VerticalAlignment="Top" Width="176" KeyUp="txtEmail_KeyUp" />
+
+        <Button Height="23" HorizontalAlignment="Left" Margin="161,44,0,0" Name="btnSave" VerticalAlignment="Top" Width="104" Click="btnSave_Click" >
+            <Button.Content>
+                <StackPanel Orientation="Horizontal" Margin="-12,0,0,0">
+                    <Image Source="/Budget;component/images/save.png" Width="16" Height="16" Stretch="Fill" />
+                    <TextBlock Margin="2,0,0,0">Сохранить</TextBlock>
+                </StackPanel>
+            </Button.Content>
+        </Button>
+    </Grid>
+</dx:DXWindow>

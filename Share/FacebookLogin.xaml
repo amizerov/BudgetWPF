@@ -1,0 +1,9 @@
+﻿<dx:DXWindow x:Class="Budget.FacebookLogin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+        Title="Facebook" Height="300" Width="500" WindowStyle="SingleBorderWindow" WindowStartupLocation="CenterOwner" Icon="/Budget;component/images/facebook.png">
+    <Grid>
+        <WebBrowser Height="Auto" HorizontalAlignment="Stretch" Name="loginWebBrowser" VerticalAlignment="Stretch" Width="Auto" LoadCompleted="loginWebBrowser_LoadCompleted" />
+    </Grid>
+</dx:DXWindow>

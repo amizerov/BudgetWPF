@@ -1,0 +1,9 @@
+﻿<dx:DXWindow x:Class="Budget.VKLogin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+        Title="ВКонтакте" Height="300" Width="500" Icon="/Budget;component/images/vk.png">
+    <Grid>
+        <WebBrowser Height="Auto" HorizontalAlignment="Stretch" Name="loginVKWebBrowser" VerticalAlignment="Stretch" Width="Auto" LoadCompleted="loginVKWebBrowser_LoadCompleted" />
+    </Grid>
+</dx:DXWindow>

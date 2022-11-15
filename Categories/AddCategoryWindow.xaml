@@ -1,0 +1,42 @@
+﻿<dx:DXWindow x:Class="Budget.AddCategoryWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+        xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
+        Title="Добавление/редактирование категории" Height="267" Width="323" KeyUp="Window_KeyUp" WindowStartupLocation="CenterOwner" Icon="/Budget;component/images/budget.png" ShowInTaskbar="False" ResizeMode="NoResize" Loaded="Window_Loaded">
+    <Grid>
+        <Label Content="Название:" Height="28" HorizontalAlignment="Left" Margin="12,12,0,0" Name="label1" VerticalAlignment="Top" />
+        <dxe:TextEdit Height="23" HorizontalAlignment="Left" Margin="81,12,0,0" Name="txtName" VerticalAlignment="Top" Width="201" />
+
+        <Expander Header="Дополнительно" Height="131" HorizontalAlignment="Left" Margin="12,45,0,0" Name="expanderExtraInfo" VerticalAlignment="Top" Width="277" Expanded="expanderExtraInfo_Expanded" Collapsed="expanderExtraInfo_Collapsed">
+            <Grid>  
+                <Label Content="Лимит расхода в месяц:" Height="28" HorizontalAlignment="Left" Margin="12,10,0,0" Name="lblDebetLimit" VerticalAlignment="Top" />
+                <dxe:TextEdit Height="23" HorizontalAlignment="Left" Margin="159,11,0,0" Name="txtDebetLimit" VerticalAlignment="Top" Width="108" />
+
+                <Label Content="План дохода в месяц:" Height="28" HorizontalAlignment="Left" Margin="12,40,0,0" Name="lblCreditPlan" VerticalAlignment="Top" />
+                <dxe:TextEdit Height="23" HorizontalAlignment="Left" Margin="159,41,0,0" Name="txtCreditPlan" VerticalAlignment="Top" Width="108" />
+
+                <Label Content="Первый день:" Height="28" HorizontalAlignment="Left" Margin="12,69,0,0" Name="lblFirstDay" VerticalAlignment="Top" />
+                <xctk:IntegerUpDown HorizontalAlignment="Left" Margin="218,71,0,0" Name="upDownFirstDay" VerticalAlignment="Top" Width="49" Maximum="28" Minimum="1" Text="1" Height="23" />
+            </Grid>
+        </Expander>
+
+        <Button Height="25" Margin="0,0,20,21" Name="AddButton" VerticalAlignment="Bottom" Click="AddButton_Click" HorizontalAlignment="Right" Width="94">
+            <Button.Content>
+                <StackPanel Orientation="Horizontal" Margin="-9,0,0,0">
+                    <Image Source="/Budget;component/images/save.png" Width="16" Height="16" Stretch="Fill" />
+                    <TextBlock Margin="2,0,0,0">Сохранить</TextBlock>
+                </StackPanel>
+            </Button.Content>
+        </Button>
+        <Button Height="25" Margin="0,0,132,21" Name="CancelButton" VerticalAlignment="Bottom" Click="CancelButton_Click" HorizontalAlignment="Right" Width="79">
+            <Button.Content>
+                <StackPanel Orientation="Horizontal" Margin="-12,0,0,0">
+                    <Image Source="/Budget;component/images/cancel.png" Width="16" Height="16" Stretch="Fill"/>
+                    <TextBlock Margin="2,0,0,0">Отмена</TextBlock>
+                </StackPanel>
+            </Button.Content>
+        </Button>
+    </Grid>
+</dx:DXWindow>
