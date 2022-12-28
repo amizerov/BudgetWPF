@@ -5,9 +5,7 @@ VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Budget", "Budget.csproj", "{5234A6BF-14F7-43ED-9517-8047A4EF5205}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "amGlobals", "..\amGlobals\amGlobals.csproj", "{A69600FB-8789-4A7F-AED7-F22B6AEE9AB3}"
-EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "BudgetSetup", "..\BudgetSetup\BudgetSetup.vdproj", "{EA079ADE-C000-4BC0-BA24-F674B6D8ACDB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "amGlobals", "amGlobals\amGlobals.csproj", "{A69600FB-8789-4A7F-AED7-F22B6AEE9AB3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,15 +53,6 @@ Global
 		{A69600FB-8789-4A7F-AED7-F22B6AEE9AB3}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{A69600FB-8789-4A7F-AED7-F22B6AEE9AB3}.Release|x86.ActiveCfg = Release|Any CPU
 		{A69600FB-8789-4A7F-AED7-F22B6AEE9AB3}.Release|x86.Build.0 = Release|Any CPU
-		{EA079ADE-C000-4BC0-BA24-F674B6D8ACDB}.Debug|Any CPU.ActiveCfg = Debug
-		{EA079ADE-C000-4BC0-BA24-F674B6D8ACDB}.Debug|Mixed Platforms.ActiveCfg = Debug
-		{EA079ADE-C000-4BC0-BA24-F674B6D8ACDB}.Debug|x86.ActiveCfg = Debug
-		{EA079ADE-C000-4BC0-BA24-F674B6D8ACDB}.Designer|Any CPU.ActiveCfg = Debug
-		{EA079ADE-C000-4BC0-BA24-F674B6D8ACDB}.Designer|Mixed Platforms.ActiveCfg = Debug
-		{EA079ADE-C000-4BC0-BA24-F674B6D8ACDB}.Designer|x86.ActiveCfg = Debug
-		{EA079ADE-C000-4BC0-BA24-F674B6D8ACDB}.Release|Any CPU.ActiveCfg = Release
-		{EA079ADE-C000-4BC0-BA24-F674B6D8ACDB}.Release|Mixed Platforms.ActiveCfg = Release
-		{EA079ADE-C000-4BC0-BA24-F674B6D8ACDB}.Release|x86.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
