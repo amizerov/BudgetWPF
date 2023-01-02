@@ -416,7 +416,10 @@
                     <dx:DXTabItem Height="25" Width="150" Header="Отчеты и инфографика" Name="ReportsTab">
                         <dx:DXTabControl Margin="0,0,0,0" Name="tabControlReport">
                             <dx:DXTabItem Header="История остатков" Name="tabItemBalanceRestHistory">
-                                <Grid Name="balanceRestChartGrid" >
+                                <Grid Name="balanceRestChartGrid">
+                                    <WindowsFormsHost Name="wfhBalanceRestChart">
+                                        
+                                    </WindowsFormsHost>
                                 </Grid>
                             </dx:DXTabItem>
                             <dx:DXTabItem Header="Баланс по счетам" Name="tabItemBalanceAccounts">

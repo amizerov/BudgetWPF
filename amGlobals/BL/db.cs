@@ -35,14 +35,14 @@ namespace am.BL
         {
             LastError = "";
             DataTable dt = null;
+            sql = sql.ToLower();
 
             var pars = GetParList(GetParNames(sql), par);
-
-            if (sql.ToLower().IndexOf("exec") == 0)
+            if (sql.IndexOf("exec") == 0 || !sql.StartsWith("select"))
             {  //процедура
                 if (sql.ToLower().IndexOf("execute") == 0)
                     sql = sql.Substring("execute".Length, sql.Length - "execute".Length).Trim();
-                else
+                else if(sql.ToLower().IndexOf("exec") == 0)
                     sql = sql.Substring("exec".Length, sql.Length - "exec".Length).Trim();
 
                 var procName = GetProcName(sql);

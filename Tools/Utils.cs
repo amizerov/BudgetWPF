@@ -431,10 +431,10 @@ namespace Budget
                     form.WindowState = System.Windows.WindowState.Maximized;
                 else
                 {
-                    form.Width = Convert.ToInt32(means[0]);
-                    form.Height = Convert.ToInt32(means[1]);
-                    form.Left = Convert.ToInt32(means[2]);
-                    form.Top = Convert.ToInt32(means[3]);
+                    form.Width = (int)Convert.ToDouble(means[0]);
+                    form.Height = (int)Convert.ToDouble(means[1]);
+                    form.Left = (int)Convert.ToDouble(means[2]);
+                    form.Top = (int)Convert.ToDouble(means[3]);
                 }
             }
             

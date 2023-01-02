@@ -45,26 +45,21 @@ namespace Budget.ReportControls
 
         private void btnReload_Click(object sender, EventArgs e)
         {
+            DateTime dFrom = deFrom.DateTime, dTo = deTo.DateTime;
+            string from = dFrom.ToString("yyyyMMdd"), to = dTo.ToString("yyyyMMdd");
+
             chart.Series["Rest"].ArgumentDataMember = "Date";
             chart.Series["Rest"].ValueDataMembers.AddRange("Rest");
-            chart.Series["Rest"].DataSource 
-                = DataPoint.GetRestPoints(
-                    deFrom.DateTime.ToString("yyyyMMdd"),
-                    deTo.DateTime.ToString("yyyyMMdd"));
+            //chart.Series["Rest"].DataSource = DataPoint.GetRestPoints(from, to);
+            chart.Series["Rest"].DataSource = DataPoint.GetRestPoints2(dFrom, dTo);
 
             chart.Series["Pers"].ArgumentDataMember = "Date";
             chart.Series["Pers"].ValueDataMembers.AddRange("Rest");
-            chart.Series["Pers"].DataSource
-                = DataPoint.GetPersPoints(
-                    deFrom.DateTime.ToString("yyyyMMdd"),
-                    deTo.DateTime.ToString("yyyyMMdd"));
+            chart.Series["Pers"].DataSource = DataPoint.GetPersPoints(from, to);
 
             chart.Series["Busn"].ArgumentDataMember = "Date";
             chart.Series["Busn"].ValueDataMembers.AddRange("Rest");
-            chart.Series["Busn"].DataSource
-                = DataPoint.GetBusnPoints(
-                    deFrom.DateTime.ToString("yyyyMMdd"),
-                    deTo.DateTime.ToString("yyyyMMdd"));
+            chart.Series["Busn"].DataSource = DataPoint.GetBusnPoints(from, to);
         }
     }
     public class DataPoint
@@ -79,6 +74,20 @@ namespace Budget.ReportControls
         public static List<DataPoint> GetRestPoints(string from, string to)
         {
             DataTable dt = G.db_select("report_DailyUserRests {1}, '{2}', '{3}'", U.Cur.ID, from, to);
+            List<DataPoint> data = new List<DataPoint>();
+            foreach (DataRow r in dt.Rows)
+            {
+                string sDate = r["Date"].ToString();
+                DateTime dDate = G._D(sDate);
+                string sRest = r["Rest"].ToString();
+                double dRest = sRest.TryConvertToDouble();
+                data.Add(new DataPoint(dDate, dRest));
+            }
+            return data;
+        }
+        public static List<DataPoint> GetRestPoints2(DateTime from, DateTime to)
+        {
+            DataTable dt = db.select("report_DailyUserRests @UserID, @FromDate, @ToDate", U.Cur.ID, from, to);
             List<DataPoint> data = new List<DataPoint>();
             foreach (DataRow r in dt.Rows)
             {
