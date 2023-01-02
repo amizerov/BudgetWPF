@@ -417,7 +417,7 @@
                         <dx:DXTabControl Margin="0,0,0,0" Name="tabControlReport">
                             <dx:DXTabItem Header="История остатков" Name="tabItemBalanceRestHistory">
                                 <Grid Name="balanceRestChartGrid">
-                                    <WindowsFormsHost Name="wfhBalanceRestChart">
+                                    <WindowsFormsHost Name="wfhBalanceRestChart" Background="Azure" Padding="0,0,0,105">
                                         
                                     </WindowsFormsHost>
                                 </Grid>

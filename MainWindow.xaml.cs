@@ -110,7 +110,10 @@ namespace Budget
             FileInfo fileInfo = new FileInfo(assembly.Location);
             _BuildTime = fileInfo.LastWriteTime;
             Row1.MaxHeight = ActualHeight - 300;
-            VersionTextBlock.Content = "Version: " + assembly.ToString() + " " + _BuildTime.ToString();
+            Title += " - " + assembly.GetName().Version; 
+            VersionTextBlock.Content = "Version: " + 
+                assembly.ToString().Substring(0, 11) + " " + _BuildTime.ToString();
+            
 
             //Восстановление разметки таблиц и дат периода
             Utils.RestoreAccountsLayout(AccountsGridControl);
