@@ -88,7 +88,9 @@ namespace Budget
             _fileLoader = fileLoader;
             printWebBrowser.LoadCompleted += printWebBrowser_LoadCompleted;
 
-            balanceRestChartGrid.Children.Add(new WindowsFormsHost() { Child = new WFUcRestChart() });
+            WFUcRestChart restChart = new WFUcRestChart();
+            wfhBalanceRestChart.Child = restChart;
+
             balanceAccountsGrid.Children.Add(new BalanceAccountsReportControl(_userID));      //инициализация раздела отчета по балансу по счетам
             //balanceCategoriesGrid.Children.Add(new BalanceCategoriesReportControl(_userID));  //инициализация раздела отчета по балансу по категориям
             balanceCategoriesGrid.Children.Add(new WindowsFormsHost() { Child = new WFUcCategoriesReport() });

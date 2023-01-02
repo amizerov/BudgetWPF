@@ -200,12 +200,10 @@ namespace Budget
 
         public static DataTable GetOperationTable(DateTime beginDate, DateTime endDate, int accountID)
         {
-            var from = beginDate.ToString("yyyy-MM-dd");
-            var to = endDate.ToString("yyyy-MM-dd");
-
-            var sql = accountID > 0 ? $"GetOperationTable '{from}', '{to}', {accountID}" 
-                                     : $"GetOperationTableByUserID '{from}', '{to}', {U.Cur.ID}";
-            return db.select(sql);
+            if(accountID > 0)
+                return db.select("GetOperationTable @beginDate, @endDate, @accountID", beginDate, endDate, accountID); 
+            
+            return db.select("GetOperationTableByUserID @beginDate, @endDate, @userID", beginDate, endDate, U.Cur.ID);
         }
 
         public static List<ExportOperation> GetOperationsForExport(int accountID)
