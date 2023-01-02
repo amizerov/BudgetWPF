@@ -10,13 +10,13 @@
         <Label Content="рублей" Height="28" HorizontalAlignment="Left" Margin="200,15,0,0" Name="lblRubles" VerticalAlignment="Top" />
 
         <Label Content="2-ой счет:" Height="28" HorizontalAlignment="Left" Margin="21,49,0,0" Name="label2" VerticalAlignment="Top" />
-        <dxe:ComboBoxEdit Height="23" HorizontalAlignment="Left" Margin="102,51,0,0" Name="AccountComboBox" VerticalAlignment="Top" Width="140" SelectedIndexChanged="AccountComboBox_OnSelectedIndexChanged" />
+        <dxe:ComboBoxEdit Height="23" HorizontalAlignment="Left" Margin="102,51,0,0" Name="AccountComboBox" VerticalAlignment="Top" Width="140" SelectedIndexChanged="AccountComboBox_OnSelectedIndexChanged" IsTextEditable="False" />
 
         <Label Content="ОперДень:" Height="35" HorizontalAlignment="Left" Margin="17,83,0,0" Name="label4" VerticalAlignment="Top" />
-        <dxe:DateEdit  Height="25" HorizontalAlignment="Left" Margin="102,84,0,0" Name="OperDayDatePicker" VerticalAlignment="Top" Width="140" />
+        <dxe:DateEdit  Height="25" HorizontalAlignment="Left" Margin="102,84,0,0" Name="OperDayDatePicker" VerticalAlignment="Top" Width="140" IsTextEditable="False" />
 
         <Label Content="Категория:" Height="28" HorizontalAlignment="Left" Margin="16,114,0,0" Name="label5" VerticalAlignment="Top" />
-        <dxe:ComboBoxEdit Height="23" HorizontalAlignment="Left" Margin="102,116,0,0" Name="CategoryComboBox" VerticalAlignment="Top" Width="140" />
+        <dxe:ComboBoxEdit Height="23" HorizontalAlignment="Left" Margin="102,116,0,0" Name="CategoryComboBox" VerticalAlignment="Top" Width="140" IsTextEditable="False" />
         <Button Height="23" Content="..." Padding="1" HorizontalAlignment="Left" Margin="248,116,0,0" Name="EditCategoryButton" VerticalAlignment="Top" Width="23" Click="EditCategoryButton_Click" />
 
         <Label Content="Добавить фото" Height="28" Margin="286,114,0,0" Name="label3" VerticalAlignment="Top" HorizontalAlignment="Left" Width="87" />

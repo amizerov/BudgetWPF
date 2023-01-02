@@ -321,7 +321,7 @@
                             <WebBrowser Name="printWebBrowser" Grid.Column="2" HorizontalAlignment="Left" Height="1" Margin="492,284,0,0" VerticalAlignment="Top" Width="1" Grid.Row="1" Visibility="Hidden"/>
                         </Grid>
                     </dx:DXTabItem>
-                    <dx:DXTabItem Header="Все операции" Width="150" Height="25">
+                    <dx:DXTabItem Header="Все операции" Width="150" Height="25" GotFocus="DXTabItem_GotFocus">
                         <Grid Background="#00000000">
                             <Grid Height="Auto" Margin="0,1,0,20" x:Name="OperationsGrid">
                                 <Grid.ColumnDefinitions>

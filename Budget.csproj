@@ -189,6 +189,7 @@
     <Compile Include="Information\InfoWindow.xaml.cs">
       <DependentUpon>InfoWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MainWindow\AllOperationsTab.cs" />
     <Compile Include="Model\Account.cs" />
     <Compile Include="Model\ExportAccount.cs" />
     <Compile Include="Model\ExportCategory.cs" />

@@ -104,10 +104,15 @@
             // 
             // gv
             // 
+            this.gv.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
             this.gv.GridControl = this.gc;
             this.gv.Name = "gv";
+            this.gv.OptionsBehavior.Editable = false;
+            this.gv.OptionsSelection.EnableAppearanceFocusedCell = false;
+            this.gv.OptionsSelection.UseIndicatorForSelection = false;
             this.gv.OptionsView.ShowFooter = true;
             this.gv.OptionsView.ShowGroupPanel = false;
+            this.gv.OptionsView.ShowIndicator = false;
             // 
             // cbCategory
             // 

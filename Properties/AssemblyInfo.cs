@@ -51,7 +51,7 @@ using System.Windows;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.3.1.7")]
+[assembly: AssemblyVersion("1.3.1.9")]
 /*TODO***********************************************
  * -----------------------------------------
  * Ошибки:
@@ -82,7 +82,7 @@ using System.Windows;
  * **************************************************     
  * 
  * ИСТОРИЯ ВЕРСИЙ:
- *  09/11/2022 Версия 1.3.1.7
+ *  09/11/2022 Версия 1.3.1.8
  * -------------------------------
  * +    1 - Сохранение состояния гридов на главном окне
  * +    2 - График общего баланса и расходов
