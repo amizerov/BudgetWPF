@@ -89,7 +89,6 @@ namespace Budget
             printWebBrowser.LoadCompleted += printWebBrowser_LoadCompleted;
 
             WFUcRestChart restChart = new WFUcRestChart();
-            restChart.Height = 10;
             wfhBalanceRestChart.Child = restChart;
 
             balanceAccountsGrid.Children.Add(new BalanceAccountsReportControl(_userID));      //инициализация раздела отчета по балансу по счетам
