@@ -28,6 +28,7 @@
                 <dxb:BarButtonItem  Content="Проведена" Glyph="/Budget;component/images/status_finished.png" ItemClick="StatusCarriedOutMenuItem_Click" Name="bStatusFinished" />
                 <dxb:BarButtonItem  Content="Добавить" Glyph="/Budget;component/images/add.png" ItemClick="AccountAddOperation_Click" Name="bAccountAdd" />
                 <dxb:BarButtonItem  Content="Редактировать" Glyph="/Budget;component/images/edit.png" ItemClick="AccountEditOperation_Click" Name="bAccountEdit" />
+                <dxb:BarButtonItem  Content="Задать остаток" Glyph="/Budget;component/images/edit.png" ItemClick="SetAccountRest_Click" Name="bSetAccountRest" />
                 <dxb:BarButtonItem  Content="Удалить" Glyph="/Budget;component/images/remove.png" ItemClick="AccountDeleteOperation_Click" Name="bAccountRemove" />
                 <dxb:BarButtonItem  Content="Списание" Glyph="/Budget;component/images/fromaccount.png" ItemClick="TransferDebetOperation_Click" Name="bTransferDebet" />
                 <dxb:BarButtonItem  Content="Зачисление" Glyph="/Budget;component/images/toaccount.png" ItemClick="TransferCreditOperation_Click" Name="bTransferCredit" />
@@ -216,6 +217,7 @@
                                     <dxb:PopupMenuInfo>
                                         <dxb:BarButtonItemLink BarItemName="bAccountAdd"/>
                                         <dxb:BarButtonItemLink BarItemName="bAccountEdit"/>
+                                        <dxb:BarButtonItemLink BarItemName="bSetAccountRest"/>
                                         <dxb:BarButtonItemLink BarItemName="bAccountRemove"/>
                                         <dxb:BarItemLinkSeparator/>
                                         <dxb:BarButtonItemLink BarItemName="bTransferDebet"/>

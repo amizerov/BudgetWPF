@@ -1448,6 +1448,11 @@ Web-страница (*.html) | *.html|
             w.ShowDialog();
         }
 
+        private void SetAccountRest_Click(object sender, ItemClickEventArgs e)
+        {
+
+        }
+
         private void possibleAccountsMenuItem_Click(object sender, ItemClickEventArgs e)
         {
             var w = new PossibleAccountsWindow(_userID) { Owner = this };
