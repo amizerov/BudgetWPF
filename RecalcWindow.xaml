@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
         xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
-        Title="Перерасчет остатков" Height="178" Width="256" ResizeMode="NoResize" Icon="/Budget;component/images/budget.png" WindowStartupLocation="CenterOwner" Closing="DXWindow_Closing">
+        Title="Перерасчет остатков" Height="178" Width="256" ResizeMode="NoResize" Icon="/Budget;component/images/budget.png" WindowStartupLocation="CenterOwner" Closing="DXWindow_Closing" ShowInTaskbar="False">
     <Grid>
         <dxe:DateEdit Height="25" HorizontalAlignment="Left" Margin="58,39,0,0" Name="dpFrom" VerticalAlignment="Top" Width="165" EditValueChanged="AccountsDownDatePicker_SelectedDateChanged" />
         <dxe:DateEdit Height="25" HorizontalAlignment="Left" Margin="58,68,0,0" Name="dpTo" VerticalAlignment="Top" Width="165" EditValueChanged="AccountsUpDatePicker_SelectedDateChanged" />
